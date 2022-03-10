@@ -1,0 +1,38 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.bhushan.RegisterApplication.Model.RegisterModel;
+
+
+public class RegisterDao 
+{
+	void createConnection() throws ClassNotFoundException
+		{
+			String url="jdbc:oracle:thin:@localhost:1524:xe";
+			try 
+			{
+				Class.forName("oracle.jdbc.driver.OracleDriver");
+				Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","XE","root");
+				
+			}catch(Exception e)
+			{
+				System.out.println("Exception is"+e);
+			}
+		}
+	public String inserData(RegisterModel model)
+	{
+		try {
+			createConnection();
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+		return null;
+	}
+		
+}
+	
+
+

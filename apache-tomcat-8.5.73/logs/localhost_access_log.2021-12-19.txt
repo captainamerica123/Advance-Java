@@ -1,0 +1,8 @@
+127.0.0.1 - - [19/Dec/2021:00:13:43 +0530] "GET / HTTP/1.1" 200 11354
+127.0.0.1 - - [19/Dec/2021:00:13:48 +0530] "GET /RegisterApplication/register.jsp HTTP/1.1" 200 837
+127.0.0.1 - - [19/Dec/2021:00:13:48 +0530] "GET /favicon.ico HTTP/1.1" 200 8192
+127.0.0.1 - - [19/Dec/2021:00:13:54 +0530] "GET /RegisterApplication/admin.jsp HTTP/1.1" 200 493
+127.0.0.1 - - [19/Dec/2021:00:13:57 +0530] "GET /RegisterApplication/AdminController?Click+here+for+getting+emp+info=employeeinformation HTTP/1.1" 200 1140
+127.0.0.1 - - [19/Dec/2021:00:14:44 +0530] "POST /RegisterApplication/RegistrationController HTTP/1.1" 200 411
+127.0.0.1 - - [19/Dec/2021:00:14:49 +0530] "GET /RegisterApplication/admin.jsp HTTP/1.1" 200 493
+127.0.0.1 - - [19/Dec/2021:00:14:51 +0530] "GET /RegisterApplication/AdminController?Click+here+for+getting+emp+info=employeeinformation HTTP/1.1" 200 1265

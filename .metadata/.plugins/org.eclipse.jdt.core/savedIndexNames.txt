@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+D:\Bhushan's Space\JAVA FULLSTACK\ADVANCE JAVA\Program Practice\.metadata\.plugins\org.eclipse.jdt.core
+935634034.index
+1865797976.index
+1870739428.index
+1392768284.index
+2270471793.index
+3780142202.index
+744357045.index

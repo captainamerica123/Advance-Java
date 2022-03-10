@@ -1,0 +1,5 @@
+package com.bhushan.RegistrationApplication.dao;
+
+public class RegisterDao {
+
+}

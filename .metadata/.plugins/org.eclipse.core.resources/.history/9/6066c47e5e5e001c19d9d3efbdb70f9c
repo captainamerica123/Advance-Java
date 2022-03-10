@@ -1,0 +1,89 @@
+package com.bhushan.RegisterApplication.Controller;
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+import com.bhushan.RegisterApplication.Model.RegisterModel;
+import com.bhushan.RegistrationApplication.dao.RegisterDao;
+
+/**
+ * Servlet implementation class RegistrationController
+ */
+public class RegistrationController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public RegistrationController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String firstname=request.getParameter("firstname");
+		String lastname=request.getParameter("lastname");
+
+		String email=request.getParameter("email");
+
+		String age=request.getParameter("age");
+
+		String mobile=request.getParameter("mobile");
+
+		String userid=request.getParameter("userid");
+		String password=request.getParameter("password");
+		
+		RegisterModel r=new RegisterModel();
+		r.setFirstname(firstname);
+		r.setLastname(lastname);
+		r.setEmail(email);
+		r.setAge(age);
+		r.setMobile(Integer.parseInt(mobile));
+		r.setUserid(userid);
+		r.setpassword(password);
+		
+		RegisterDao dao= new RegisterDao();
+		String result;
+		try {
+			result = dao.insertData(r);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		String message=null;
+		try
+		{
+			result = dao.insertData(r);
+		}
+		catch (Exception e) 
+		{
+			if(e.getMessage().contains("_PK"))
+			{
+				message="Primary key is violated, User Name cannot be duplicated";
+			}
+			throw new ServletException(message);
+		}
+			System.out.println("result is "+result);
+
+
+
+		
+		}
+	
+
+}

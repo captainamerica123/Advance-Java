@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/apache-tomcat-8.5.73 at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="apache-tomcat-8.5.73 at localhost" name="apache-tomcat-8.5.73 at localhost" runtime-id="apache-tomcat-8.5.73" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="false" timestamp="6">
+  <list key="modules" value0="FirstWebProject::org.eclipse.jst.jee.server:FirstWebProject::jst.web::2.5" value1="RegisterApplication03::org.eclipse.jst.jee.server:RegisterApplication03::jst.web::2.5" value2="SecondWebApplication::org.eclipse.jst.jee.server:SecondWebApplication::jst.web::2.5" value3="RegisterApplication::org.eclipse.jst.jee.server:RegisterApplication::jst.web::2.5"/>
+</server>
